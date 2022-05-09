@@ -4,8 +4,7 @@
     box-sizing: border-box
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sunflower:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sunflower:wght@500&family=Work+Sans:wght@300&display=swap');
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -55,6 +54,8 @@ main {
 .nav-item a:hover::before {
     transform-origin: middle;
     transform: scaleX(1);
+    text-decoration: none;
+    color: #111;
   }
 
 .full-screen {
@@ -151,10 +152,11 @@ p {
 /******************START OF ABOUT SECTION *********************/
 
 .about-left h2{
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 600;
     color: #111;
-    margin: 0 0 15px;
+    margin: 10px 0 15px;
+    line-height: 1.2;
 }
 
 .about-left .m-btn-link {
@@ -163,7 +165,7 @@ p {
 }
 
 .m-btn-link {
-    color: #444!important;
+    color: rgb(0, 0, 0)!important;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
@@ -174,6 +176,8 @@ p {
 
 a {
     background-color: transparent;
+    text-decoration: none;
+    color: white;
 }
 
 .m-btn-link:before {
@@ -240,6 +244,9 @@ img {
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
   }
+.theme-after p{
+    font-family: 'Work Sans', sans-serif;
+}
 
 .theme-after:before{
     content: '';
@@ -261,6 +268,6 @@ background-position: 0;
 width: 100%;
 }
 
-.p-0px-b
-
-
+a:hover{
+    color: #111;
+}
