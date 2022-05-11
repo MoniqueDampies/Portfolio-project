@@ -1,15 +1,17 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sunflower:wght@500&family=Work+Sans:wght@300&display=swap');
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #666666;
+    overflow-x: hidden;
 }
 
 main {
@@ -18,10 +20,12 @@ main {
 
 #landing {
     height: 100vh;
-    background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);}
+    background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);
+}
 
 .gradient-bg {
-    background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);}
+    background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);
+}
 
 .container {
     width: 100%;
@@ -31,8 +35,9 @@ main {
     margin-left: auto;
 }
 
+
 .nav-item a {
-	color: #feffff;
+    color: #feffff;
     position: relative;
     text-decoration: none;
 }
@@ -49,21 +54,21 @@ main {
     transform-origin: middle;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
-  }
+}
 
 .nav-item a:hover::before {
     transform-origin: middle;
     transform: scaleX(1);
     text-decoration: none;
     color: #111;
-  }
+}
 
 .full-screen {
-     min-height: 100vh;
+    min-height: 100vh;
 }
 
 .justify-content-center {
-    justify-content: center!important;
+    justify-content: center !important;
 }
 
 div {
@@ -95,19 +100,19 @@ p {
 }
 
 .text-center {
-    text-align: center!important;
+    text-align: center !important;
 }
 
 .font-alt {
     font-family: 'Sunflower', sans-serif;
-    font-size: 65px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: 600;
     color: white;
     margin: 0 0 20px;
 }
 
-.home-text-center{
-    margin-top: 5rem;
+.home-text-center {
+    margin-top: 1rem;
 }
 
 .home-text {
@@ -134,7 +139,7 @@ p {
     height: 45px;
     line-height: 45px;
     padding: 0 30px;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
@@ -144,19 +149,27 @@ p {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     display: inline-block;
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 /****************** END OF LANDING  ***************************/
 
 /******************START OF ABOUT SECTION *********************/
 
-.about-left h2{
+.about-left h2 {
     font-size: 34px;
     font-weight: 600;
     color: #111;
     margin: 10px 0 15px;
-    line-height: 1.2;
+    line-height: 1.5;
+}
+
+.about-left p{
+    font-size: 18px;
+    margin: 15px 0 15px;
+
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .about-left .m-btn-link {
@@ -165,12 +178,12 @@ p {
 }
 
 .m-btn-link {
-    color: rgb(0, 0, 0)!important;
+    color: rgb(0, 0, 0) !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
     display: inline-block;
-    text-decoration: none!important;
+    text-decoration: none !important;
     transition: ease all 0.3s;
 }
 
@@ -192,7 +205,7 @@ a {
     transition: ease all 0.3s;
 }
 
-.m-btn-link:after{
+.m-btn-link:after {
     content: "";
     width: 0;
     height: 40%;
@@ -203,15 +216,16 @@ a {
     transition: ease all 0.3s;
 }
 
-::after, ::before{
+::after,
+::before {
     box-sizing: border-box;
 }
 
-.theme-after::after{
+.theme-after::after {
     background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);
 }
 
-.about-left .m-btn{
+.about-left .m-btn {
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -228,14 +242,12 @@ img {
     border-style: none;
 }
 
-.theme-after{
-    background-image: linear-gradient(
-      to right,
-      #8c38fe,
-      #9c66e5,
-      #b72ee4 50%,
-      rgb(39, 23, 44) 50%
-    );
+.theme-after {
+    background-image: linear-gradient(to right,
+            #8c38fe,
+            #9c66e5,
+            #b72ee4 50%,
+            rgb(39, 23, 44) 50%);
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -244,12 +256,13 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
-  }
-.theme-after p{
+}
+
+.theme-after p {
     font-family: 'Work Sans', sans-serif;
 }
 
-.theme-after:before{
+.theme-after:before {
     content: '';
     background-image: linear-gradient(60deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
     display: block;
@@ -259,53 +272,61 @@ img {
     width: 0;
     height: 3px;
     transition: all 0.3s ease-in-out;
-  }
+}
 
 .theme-after:hover {
-background-position: 0;
-}
-   
-.theme-after:hover::before{
-width: 100%;
+    background-position: 0;
 }
 
-a:hover{
+.theme-after:hover::before {
+    width: 100%;
+}
+
+a:hover {
     color: #111;
 }
 
 /************ BUTTON ***************/
 
-.btn-gradient{
-    background: #feffff!important;
-        color: rgb(0, 0, 0);
-        border-radius: 45px;
-        padding: 10px 40px;
-        box-shadow: 0 6px 30px -10px #4a74c9;
-        transition: all 0.5s ease;
-        border: 0;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-    
-    .btn-gradient:hover{
-        background-image: linear-gradient(60deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
-        border: none;
-      box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
-      transform: scale(0.930);
-    }
-    .gradient3{
-        background-image: linear-gradient(60deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
-        box-shadow: 0 2px 25px 0 rgba(111, 30, 138, .35);
-      }
-      
-      .gradient3:hover{
-        background-image: linear-gradient(60deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%)!important;
-        color: white;
-        border: none;
-        box-shadow: 0 10px 30px #8c38fe, 0 3px 0 0 #9c66e5;
-          transform: translateY(-3px);
-      }
-    /***********SKILLS SECTION*****************/
+.btn-gradient {
+    background: #feffff !important;
+    color: rgb(0, 0, 0);
+    border-radius: 45px;
+    padding: 15px 40px;
+    margin: 5px;
+    box-shadow: 0 6px 30px -10px #4a74c9;
+    transition: all 0.5s ease;
+    border: 0;
+    font-size: small;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-gradient:hover {
+    background-image: linear-gradient(60deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
+    border: none;
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    transform: scale(0.930);
+}
+
+.gradient3 {
+    background-image: linear-gradient(60deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%);
+    box-shadow: 0 2px 25px 0 rgba(111, 30, 138, .35);
+}
+
+.mywrkbtn {
+    padding: 15px 50px;
+}
+
+.gradient3:hover {
+    background-image: linear-gradient(60deg, #8c38fe 10%, #b72ee4 50%, #9c66e5 100%) !important;
+    color: white;
+    border: none;
+    box-shadow: 0 10px 30px #8c38fe, 0 3px 0 0 #9c66e5;
+    transform: translateY(-3px);
+}
+
+/***********SKILLS SECTION*****************/
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -318,40 +339,8 @@ a:hover{
     max-width: 100%;
 }
 
-.feature-box-02 {
-    padding: 35px 8%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0px 1px 27px -3px rgb(0 0 0 / 20%);
-}
 
-.feature-box-02 .icon {
-    width: 100%;
-    height: 100px;
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 50%;
-    line-height: 100px;
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 30px;
-    transition: ease all 0.3s;
-}
-
-.feature-box-02 h5{
-    font-size: 16px;
-    color: #151515;
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-family: inherit;
-    line-height: 1.2;
-    margin-top: 0;
-}
-
-i::before{
+i::before {
     box-sizing: border-box;
 }
 
@@ -360,53 +349,133 @@ article.col-md-4 col-lg-3 {
     margin-top: 1em;
     margin-bottom: 2em;
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
-  }
-  
-  div.card-content {
+}
+
+div.card-content {
     background: #f5f5f5;
     padding: 0.5em;
     margin-top: 1em;
     margin-bottom: 2em;
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
     border-radius: 10px;
-background: linear-gradient(145deg, #dddddd, #ffffff);
-box-shadow:  10px 10px 10px #dddddd,
-             -10px -10px 10px #ffffff;
-    
-  }
-  
-  div.card-content h3 {
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    box-shadow: 10px 10px 10px #dddddd,
+        -10px -10px 10px #ffffff;
+
+}
+
+div.card-content h3 {
     margin-bottom: 0.5em;
     font-weight: normal;
     text-align: center;
-  }
-  
-  div.card-content p {
+}
+
+div.card-content p {
     font-size: 95%;
-  }
-  
-  img.card-image {
+    padding: 1rem;
+}
+
+img.card-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    border-radius: 10%;
+    border-radius: 100%;
     margin-bottom: 10px;
-    padding: 2rem;
+    padding: 1rem;
     /* margin-left: 7rem;
     margin-right: 1rem; */
     height: auto;
     opacity: 0.8;
     transition: all 0.5s ease;
-  }
-  
-  div .card-image:hover {
+}
+
+div .card-image:hover {
     text-decoration: none;
-  }
-  
-  div .card-image:hover {
+    background-color: #111;
+    border: #feffff;
+}
+
+div .card-image:hover {
     opacity: 1.5;
     filter: contrast(100%);
-  }
-  
+}
 
+/*88************** END OF SKILLS **************************/
+
+
+/***************** START OF RESUME/timeline *************************/
+#resume {
+    height: 150vh;
+    color: rgb(0, 0, 0);
+
+}
+#timeline-sec {
+    background: rgba(0, 0, 0, 0.23);
+    margin-top: 1rem;
+    border-radius: 15px;
+background: linear-gradient(145deg, #e5e6e6, #ffffff);
+box-shadow:  10px 10px 10px #e5e6e6,
+             -10px -10px 10px #ffffff;
+}
+
+.resume-image{
+    width: 25%;
+    float: left;
+    border-radius: 100%;
+    padding: 1rem;
+    margin-left: -15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    filter: grayscale(0%);
+}
+
+.resume-image:hover{
+    filter: grayscale(100%);
+}
+
+.end-side .resume-image{
+    float: right;
+    padding: 1rem;
+    margin-left: 10px;
+
+}
+
+.resume-title{
+    font-weight: 600;
+}
+
+/***************** END OF RESUME *************************/
+
+/***************** START OF testimonials *************************/
+#testimonials {
+    height: 100vh;
+    background-color: #4a74c9;
+    color: #fff;
+}
+
+/***************** END OF testimonials *************************/
+/***************** START OF projects *************************/
+#projects {
+    height: 100vh;
+    background-color: #4a74c9;
+    color: #fff;
+}
+
+/***************** END OF projects *************************/
+/***************** START OF contact *************************/
+#contact {
+    height: 100vh;
+    background-color: #4a74c9;
+    color: #fff;
+}
+
+/***************** END OF contact *************************/
+/***************** START OF footer *************************/
+#footer {
+    height: 10vh;
+    background-color: #4a74c9;
+    color: #fff;
+}
+
+/***************** END OF footer *************************/
