@@ -533,6 +533,7 @@ div.testi-content2 p {
 
 /***************** END OF testimonials *************************/
 /***************** START OF projects *************************/
+
 #projects {
     background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);
    padding-bottom: 5%;
@@ -543,6 +544,43 @@ div.testi-content2 p {
     padding-top: -10%;
     margin-top: -40px;
     border-radius: 10px;
+}
+
+.card {
+	position: relative;
+  }
+  
+  .staff-details {
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-bottom: 30px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	opacity: 0;
+	transition: all 0.3s linear;
+  }
+  
+  .card:hover .staff-details {
+	opacity: 1;
+  }
+.staff-details a{
+	margin-right: 100%;
+	width: 100%;
+}
+.card-image{
+	width: 10%!important;
+}
+
+.card-title{
+	color: rgb(0, 0, 0);
+	padding: 2px;
+	margin-top: 20px;
 }
 
 
