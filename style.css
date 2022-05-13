@@ -66,7 +66,7 @@ main {
 
 
 .nav-item a {
-    color: #feffff;
+    /* color: #feffff; */
     position: relative;
     text-decoration: none;
 }
@@ -85,6 +85,19 @@ main {
     transition: transform .3s ease-in-out;
 }
 
+.nav-item a:visited{
+    color: white;
+    text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.nav-item a:link{
+   color: white;
+   text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.7);
+
+}
+.nav-link a:hover{
+    color: #000000;
+}
 .nav-item a:hover::before {
     transform-origin: middle;
     transform: scaleX(1);
@@ -93,12 +106,12 @@ main {
 }
 
 .navbar:hover{
-    background: rgba(255, 255, 255, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(5.1px);
-color: #5300bf;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.3px);
+    -webkit-backdrop-filter: blur(16.3px);
 }
 
 .full-screen {
@@ -634,7 +647,7 @@ div.testi-content2 p {
 
 .card-body{
     padding-top: -10%;
-    margin-top: -210px;   
+    margin-top: -260px;   
      border-radius: 10px;
 }
 
