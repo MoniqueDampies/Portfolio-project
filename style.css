@@ -868,6 +868,9 @@ div.testi-content2 p {
     .resume-image {
         width: 80%;
     }
+    .hover {
+        height: 16rem;;
+    }
     #timeline-sec {
         height: 510px;
     }
@@ -906,7 +909,7 @@ div.testi-content2 p {
         font-size: 0.82rem;
     }
     .hover {
-        height: 16.8rem;;
+        height: 16rem;;
     }
     .contact-info-box .contact-info p {
         font-size: 15px;
@@ -917,6 +920,9 @@ div.testi-content2 p {
 @media all and (max-width:350px) {
     #timeline-sec {
         height: 550px;
+    }
+    .hover {
+        height: 16rem;;
     }
 }
 
